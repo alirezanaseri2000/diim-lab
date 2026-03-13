@@ -1,0 +1,112 @@
+<button id="backToTop" aria-label="Back to top">↑</button>
+<style>
+  #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-size: 1.2em;
+    opacity: 0.9;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+  #backToTop.show {
+    display: flex;
+  }
+  #backToTop:hover {
+    background: #1d4ed8;
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+  }
+  #backToTop:active {
+    transform: translateY(0);
+  }
+  @media (max-width: 768px) {
+    #backToTop {
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 44px;
+      height: 44px;
+      font-size: 1.1em;
+    }
+  }
+</style>
+<script>
+  (function() {
+    const backToTopButton = document.getElementById('backToTop');
+    if (!backToTopButton) return;
+    
+    function toggleButton() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    }
+    
+    window.addEventListener('scroll', toggleButton);
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  })();
+</script>
+
+<footer id="footer">
+    <div style="margin-bottom: 1.5rem;">
+        <div style="display: flex; justify-content: center; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
+            <a href="https://www.youtube.com/uofguelph" target="_blank" rel="noopener noreferrer" aria-label="University of Guelph YouTube" style="color: rgba(255, 255, 255, 0.7); font-size: 1.5em; transition: color 0.3s ease; text-decoration: none;">
+                <i class="fa fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/school/university-of-guelph/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="University of Guelph LinkedIn" style="color: rgba(255, 255, 255, 0.7); font-size: 1.5em; transition: color 0.3s ease; text-decoration: none;">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/uofguelph/" target="_blank" rel="noopener noreferrer" aria-label="University of Guelph Instagram" style="color: rgba(255, 255, 255, 0.7); font-size: 1.5em; transition: color 0.3s ease; text-decoration: none;">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/uofguelph" target="_blank" rel="noopener noreferrer" aria-label="University of Guelph Facebook" style="color: rgba(255, 255, 255, 0.7); font-size: 1.5em; transition: color 0.3s ease; text-decoration: none;">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://x.com/uofg" target="_blank" rel="noopener noreferrer" aria-label="University of Guelph X (Twitter)" style="color: rgba(255, 255, 255, 0.7); font-size: 1.5em; transition: color 0.3s ease; text-decoration: none;">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+    <div class="copyright" style="font-style: italic;">
+        AI-Driven Medical Imaging & Diagnostics Lab at University of Guelph
+    </div>
+</footer>
+<style>
+  #footer a:hover {
+    color: #FFF !important;
+  }
+</style>
+<script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/jquery.scrollex.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/skel.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/util.js"></script>
+<script src="{{site.baseurl}}/assets/js/main.js"></script>
+<script>
+                    let navLinks = document.querySelector('.navNarrow');
+                    let narrowLinks = document.querySelector('.narrowLinks');
+
+                    navLinks.addEventListener('click', toggle);
+
+                    function toggle() {
+                        narrowLinks.classList.toggle('hidden');
+                    };
+</script>

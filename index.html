@@ -1,0 +1,57 @@
+---
+group: home
+---
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AI-Driven Medical Imaging & Diagnostics Lab @ University of Guelph</title>
+		<meta name="description" content="Welcome to the AI-Driven Medical Imaging & Diagnostics Lab at the University of Guelph in Ontario, Canada.">
+		<meta name="keywords" content="medical imaging,artificial intelligence,AI,image analysis,segmentation,computer-aided diagnosis,University of Guelph,medical AI">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JE9GE456RQ"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-JE9GE456RQ');
+		</script>
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+			}
+			header nav a {
+				font-size: 1.15em !important;
+				font-weight: 700 !important;
+				font-style: italic !important;
+			}
+			.welcome-title {
+				font-size: 1.4em;
+				white-space: nowrap;
+			}
+			@media screen and (max-width: 736px) {
+				.welcome-title {
+					font-size: 1.1em;
+					white-space: normal;
+					line-height: 1.3;
+					padding: 0 0.5em;
+				}
+			}
+			@media screen and (max-width: 480px) {
+				.welcome-title {
+					font-size: 0.95em;
+					line-height: 1.2;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		{% include header.html %}
+		{% include slider.html %}
+		{% include content_box.html %}
+		{% include footer.html %}
+	</body>
+</html>
