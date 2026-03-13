@@ -1,6 +1,6 @@
-baseurl: ""
-url: "https://alirezanaseri2000.github.io/diim-lab"
+url: "https://alirezanaseri2000.github.io"
+baseurl: "/diim-lab"
+
 exclude: ['README.md', 'vendor', 'Gemfile', 'Gemfile.lock']
 markdown: kramdown
 future: true
-# GitHub Pages configuration
