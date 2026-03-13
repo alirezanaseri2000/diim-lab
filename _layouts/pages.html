@@ -1,82 +1,91 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>{{ page.title }} | Design Innovation and Intelligent Manufacturing (DIIM) Lab </title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		{% if page.title == "Publications" %}
-		<meta property="og:title" content="Publications | Design Innovation and Intelligent Manufacturing (DIIM) Lab" />
-		<meta property="og:description" content="Research publications from the Design Innovation and Intelligent Manufacturing (DIIM) Lab at University of Guelph" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/publications" />
-		<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/site/guelph_homepage_banner.png" />
-		<meta name="twitter:card" content="summary_large_image" />
-		{% elsif page.title == "News" %}
-		<meta property="og:title" content="News | Design Innovation and Intelligent Manufacturing (DIIM) Lab" />
-		<meta property="og:description" content="Latest news and updates from the Design Innovation and Intelligent Manufacturing (DIIM) Lab at University of Guelph" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/news" />
-		<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/site/guelph_homepage_banner.png" />
-		<meta name="twitter:card" content="summary_large_image" />
-		{% endif %}
-		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JE9GE456RQ"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-JE9GE456RQ');
-		</script>
-	</head>
+<head>
+	<title>{{ page.title }} | Design Innovation and Intelligent Manufacturing (DIIM) Lab</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	{% if page.title == "Publications" %}
+	<meta property="og:title" content="Publications | Design Innovation and Intelligent Manufacturing (DIIM) Lab" />
+	<meta property="og:description" content="Research publications from the Design Innovation and Intelligent Manufacturing (DIIM) Lab at University of Guelph" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/publications" />
+	<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/site/guelph_homepage_banner.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	{% elsif page.title == "News" %}
+	<meta property="og:title" content="News | Design Innovation and Intelligent Manufacturing (DIIM) Lab" />
+	<meta property="og:description" content="Latest news and updates from the Design Innovation and Intelligent Manufacturing (DIIM) Lab at University of Guelph" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/news" />
+	<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/site/guelph_homepage_banner.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	{% endif %}
+
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JE9GE456RQ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-JE9GE456RQ');
+	</script>
 
 	<style>
 		html, body {
 			margin: 0;
 			padding: 0;
 		}
+
 		header nav a {
 			font-size: 1.15em !important;
 			font-weight: 700 !important;
 			font-style: italic !important;
 		}
-		.wrapper.style3 {
-		background-color: #000;
-		color: #bfbfbf;
-		background-image: url({{site.baseurl}}{{ page.bgimage }});
-		background-size: cover;
-		background-attachment: fixed;
-		background-position: center;
-		position: relative;
-		padding: 8em 0 6em 0 !important;
-		min-height: 400px;
-	}
-	</style>
 
-	<body class="subpage">
-		{% include header-default.html %}
-		<section id="One" class="wrapper style3">
-			<div class="inner">
-				<header class="align-center">
-					<p>Design Innovation and Intelligent Manufacturing (DIIM) Lab</p>
-					<h2>{{ page.title }}</h2>
-				</header>
-			</div>
-		</section>
-		<section id="two" class="wrapper style2">
-			<div class="inner">
-				<div class="box">
-					<div class="content">
-						{% if page.heading %}
-						<header class="align-center">
-							<h2>{{ page.heading }}</h2>
-						</header>
-						{% endif %}
-						<p>{{content | markdownify}}</p>
-					</div>
+		.wrapper.style3 {
+			background-color: #000;
+			color: #bfbfbf;
+			background-image: url('{{ site.baseurl }}{{ page.bgimage }}');
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			position: relative;
+			padding: 8em 0 6em 0 !important;
+			min-height: 400px;
+		}
+	</style>
+</head>
+
+<body class="subpage">
+	{% include header-default.html %}
+
+	<section id="One" class="wrapper style3">
+		<div class="inner">
+			<header class="align-center">
+				<p>Design Innovation and Intelligent Manufacturing (DIIM) Lab</p>
+				<h2>{{ page.title }}</h2>
+			</header>
+		</div>
+	</section>
+
+	<section id="two" class="wrapper style2">
+		<div class="inner">
+			<div class="box">
+				<div class="content">
+					{% if page.heading %}
+					<header class="align-center">
+						<h2>{{ page.heading }}</h2>
+					</header>
+					{% endif %}
+
+					{{ content | markdownify }}
 				</div>
 			</div>
-		</section>
-		{% include footer.html %}
-	</body>
+		</div>
+	</section>
+
+	{% include footer.html %}
+</body>
 </html>
