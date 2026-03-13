@@ -1,5 +1,5 @@
 baseurl: ""
-url: "https://med-ai.uoguelph.ca"
+url: "https://alirezanaseri2000.github.io/diim-lab"
 exclude: ['README.md', 'vendor', 'Gemfile', 'Gemfile.lock']
 markdown: kramdown
 future: true
