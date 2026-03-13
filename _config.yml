@@ -1,6 +1,6 @@
 url: "https://alirezanaseri2000.github.io"
 baseurl: "/diim-lab"
-
+title: Design Innovation and Intelligent Manufacturing (DIIM) Lab
 exclude: ['README.md', 'vendor', 'Gemfile', 'Gemfile.lock']
 markdown: kramdown
 future: true
