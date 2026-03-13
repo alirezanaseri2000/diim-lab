@@ -1,46 +1,57 @@
 - image: '/images/site/guelph_homepage_banner.png'
-  title: '<strong><em>Welcome to the Design Innovation and Intelligent Manufacturing Lab (DIIM Lab)</em></strong>'
+  title: '<strong><em>Welcome to the Design Innovation and Intelligent Manufacturing (DIIM) Lab</em></strong>'
   content: '
   <div style="max-width: 1200px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, ''Segoe UI'', Roboto, sans-serif;">
 
     <p style="font-size: 1em; line-height: 1.7; margin-bottom: 2.5em; color: #475569; text-align: center; font-style: italic;">
-      We are part of the
-      <a href="https://www.uoguelph.ca/engineering/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">School of Engineering</a>
+      The <strong>Design Innovation and Intelligent Manufacturing (DIIM) Lab</strong> was established by
+      <strong>Dr. Sheng Yang</strong> in September 2020 and is affiliated with the
+      <a href="https://www.uoguelph.ca/engineering/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">College of Engineering and Physical Sciences</a>
       at the
-      <a href="https://www.uoguelph.ca/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">University of Guelph</a>, Guelph, Ontario, Canada.
+      <a href="https://www.uoguelph.ca/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">University of Guelph</a>,
+      Guelph, Ontario, Canada.
     </p>
 
-    <p style="font-size: 1.25em; line-height: 1.8; margin-bottom: 2em; color: #334155; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; font-weight: 700; font-style: italic;">
-      We develop intelligent methods in imaging, AI, robotics, and data-driven systems for real-world engineering and healthcare applications.
+    <p style="font-size: 1.15em; line-height: 1.8; margin-bottom: 2em; color: #334155; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; font-weight: 600; font-style: italic;">
+      We are a highly multidisciplinary research team with members from mechanical engineering,
+      computer engineering, and data science. Our mission is to develop the next generation of
+      intelligent engineering systems through synergistic research in artificial intelligence,
+      digital twins, and human-centered design.
+    </p>
+
+    <p style="font-size: 1em; line-height: 1.8; margin-bottom: 2em; color: #475569; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+      In collaboration with industrial partners and academic collaborators, we aim to push the
+      boundaries of <strong>smart manufacturing, personalized products, precision agriculture,
+      and sustainable energy systems</strong>.
     </p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5em; margin-top: 2em; max-width: 1000px; margin-left: auto; margin-right: auto;">
 
       <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center;">
-        <h3 style="color: #0f172a; font-size: 1.15em; margin: 0 0 0.8em 0; font-weight: 700; font-style: italic;">AI & Machine Learning</h3>
+        <h3 style="color: #0f172a; font-size: 1.15em; margin: 0 0 0.8em 0; font-weight: 700; font-style: italic;">Artificial Intelligence</h3>
         <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">
-          Developing reliable learning-based methods for analysis, prediction, and decision support.
+          Developing intelligent algorithms and data-driven models for advanced engineering applications.
         </p>
       </div>
 
       <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center;">
-        <h3 style="color: #0f172a; font-size: 1.15em; margin: 0 0 0.8em 0; font-weight: 700; font-style: italic;">Medical & Scientific Imaging</h3>
+        <h3 style="color: #0f172a; font-size: 1.15em; margin: 0 0 0.8em 0; font-weight: 700; font-style: italic;">Digital Twins</h3>
         <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">
-          Advancing computational imaging and image analysis for diagnostic and scientific applications.
+          Integrating physical systems with virtual models to enable predictive and adaptive manufacturing.
         </p>
       </div>
 
       <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center;">
-        <h3 style="color: #0f172a; font-size: 1.15em; margin: 0 0 0.8em 0; font-weight: 700; font-style: italic;">Robotics & Intelligent Systems</h3>
+        <h3 style="color: #0f172a; font-size: 1.15em; margin: 0 0 0.8em 0; font-weight: 700; font-style: italic;">Smart Manufacturing</h3>
         <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">
-          Building autonomous and assistive systems that connect perception, control, and real-world deployment.
+          Advancing intelligent manufacturing technologies for efficient and flexible production systems.
         </p>
       </div>
 
       <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center;">
-        <h3 style="color: #0f172a; font-size: 1.15em; margin: 0 0 0.8em 0; font-weight: 700; font-style: italic;">Data-Driven Engineering</h3>
+        <h3 style="color: #0f172a; font-size: 1.15em; margin: 0 0 0.8em 0; font-weight: 700; font-style: italic;">Human-Centered Design</h3>
         <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">
-          Integrating sensing, computation, and data pipelines to solve interdisciplinary engineering problems.
+          Designing engineering systems that effectively integrate human intelligence and machine capabilities.
         </p>
       </div>
 
