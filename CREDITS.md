@@ -34,7 +34,7 @@ This website is built using the following templates, libraries, and resources:
 
 ## Website Content
 
-All content, design modifications, and custom code specific to the AI-Driven Medical Imaging & Diagnostics Lab website are the property of the AI-Driven Medical Imaging & Diagnostics Lab at University of Guelph.
+All content, design modifications, and custom code specific to the Design Innovation and Intelligent Manufacturing (DIIM) Lab website are the property of the Design Innovation and Intelligent Manufacturing (DIIM) Lab at University of Guelph.
 
-© 2025 AI-Driven Medical Imaging & Diagnostics Lab at University of Guelph. All rights reserved.
+© 2026 Design Innovation and Intelligent Manufacturing (DIIM) Lab at University of Guelph. All rights reserved.
 
